@@ -1,5 +1,5 @@
-/* @import url("http://fonts.cdnfonts.com/css/sf-pro-display"); */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100,200,300,400,700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lato:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,9 +7,7 @@
   margin: 0;
 }
 body {
-  /* font-family: "Sf pro display";
-   */
-  font-family: "Lato", sans-serif;
+  font-family: "Sf pro display", sans-serif;
   background: url(https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,10 +24,17 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-left: 40rem;
+  margin-top: 10rem;
 }
 .date-container .time {
   font-size: 70px;
+  display: inline;
   font-weight: 400;
+  margin-left: 20px;
+}
+#date {
+  margin-left: 10rem;
 }
 .date-container #am-pm {
   font-size: 30px;
@@ -61,6 +66,9 @@ body {
   margin: 10px 0px;
   padding: 15px;
   border-radius: 8px;
+}
+.others .current-weather-items {
+  margin-right: 20rem;
 }
 .future-forecast {
   background-color: rgba(0, 0, 0, 0.678);
@@ -172,4 +180,31 @@ body {
     align-items: none;
     overflow-x: scroll;
   }
+}
+.arrowed {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 0px 20px 0;
+  /* border: 1px solid rgba(0, 0, 0, 0.25); */
+}
+
+/* Just centering the examples */
+.arrowed div {
+  position: absolute;
+  top: 15rem;
+  bottom: 10rem;
+  left: 52rem;
+  right: 20rem;
+  margin: aut;
+}
+.arrow-1 {
+  height: 15px;
+  width: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  border-width: 4px 4px 0 0;
+  transform: rotate(-45deg);
+}
+.hidden {
+  display: none;
 }

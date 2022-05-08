@@ -5,7 +5,8 @@ const timeZone = document.getElementById("timeZone");
 const countryEl = document.getElementById("country");
 const weatherForecastEl = document.getElementById("weather-forecast");
 const currentTemp = document.getElementById("current-temp");
-
+const arrow = document.querySelector(".arrow-1");
+const container = document.querySelector(".container2");
 const days = [
   "Monday",
   "Tuesday",
@@ -29,6 +30,17 @@ const months = [
   "Nov",
   "Dec",
 ];
+function closeContainer() {
+  container.classList.add("hidden");
+  arrow.style.top = "15rem";
+  arrow.style.transform = "rotate(-45deg)";
+}
+arrow.addEventListener("click", function () {
+  container.classList.remove("hidden");
+  arrow.style.top = 0;
+  arrow.style.transform = "rotate(135deg)";
+  arrow.addEventListener("click", closeContainer);
+});
 //getting the API key from the respective API
 const API_KEY = "60c6fa6a69ff49ba703c743216474064";
 
