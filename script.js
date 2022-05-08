@@ -80,7 +80,6 @@ function getWeatherData() {
 
 function showWeatherData(data) {
   let { humidity, pressure, wind_speed, feels_like } = data.current;
-
   currentWeatherItemsEl.innerHTML = `<div class="weather-items">
               <p>Humidity</p>
               <p>${humidity} %</p>
@@ -104,7 +103,6 @@ function showWeatherData(data) {
   data.daily.forEach((day, index) => {
     if (index == 0) {
       currentTemp.innerHTML = `
-
       <img src="http://openweathermap.org/img/wn//${
         day.weather[0].icon
       }@4x.png" alt="weather icon" class="w-icon">
@@ -132,5 +130,6 @@ function showWeatherData(data) {
             `;
     }
   });
+
   weatherForecastEl.innerHTML = otherDayForecast;
 }
