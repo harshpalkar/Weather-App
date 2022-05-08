@@ -2,7 +2,7 @@ const timeEl = document.querySelector("#time");
 const dateEl = document.getElementById("date");
 const currentWeatherItemsEl = document.getElementById("current-weather-items");
 const timeZone = document.getElementById("timeZone");
-const country = document.getElementById("country");
+const countryEl = document.getElementById("country");
 const weatherForecastEl = document.getElementById("weather-forecast");
 const currentTemp = document.getElementById("current-temp");
 
@@ -69,7 +69,7 @@ function getWeatherData() {
 
     fetch(
       `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=${API_KEY}`
-    )
+    ) //promise function
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -80,6 +80,8 @@ function getWeatherData() {
 
 function showWeatherData(data) {
   let { humidity, pressure, wind_speed, feels_like } = data.current;
+  timeZone.innerHTML = data.timezone;
+
   currentWeatherItemsEl.innerHTML = `<div class="weather-items">
               <p>Humidity</p>
               <p>${humidity} %</p>
@@ -94,7 +96,7 @@ function showWeatherData(data) {
             </div>
             <div class="weather-items">
               <p>Feels like</p>
-              <p>${feels_like}&#176;</p>
+              <p>${feels_like} &#176;</p>
             </div>`;
 
   // For the Current and week forecast cards
@@ -110,8 +112,8 @@ function showWeatherData(data) {
                 <div class="day">${window
                   .moment(day.dt * 1000)
                   .format("dddd")}</div>
-                  <div class="temp">Day - ${day.temp.day}&#176;C</div>
-                <div class="temp">Night - ${day.temp.night}&#176;C</div>
+                  <div class="temp">Day - ${day.temp.day} &#176;C</div>
+                <div class="temp">Night - ${day.temp.night} &#176;C</div>
             </div>
         `;
     } else {
@@ -123,8 +125,8 @@ function showWeatherData(data) {
                 <img src="http://openweathermap.org/img/wn/${
                   day.weather[0].icon
                 }@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">${day.temp.day}&#176;C</div>
-                <div class="temp">${day.temp.night}&#176;C</div>
+                <div class="temp">${day.temp.day} &#176;C</div>
+                <div class="temp">${day.temp.night} &#176;C</div>
             </div>
             
             `;
