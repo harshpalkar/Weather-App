@@ -30,17 +30,20 @@ const months = [
   "Nov",
   "Dec",
 ];
-function closeContainer() {
-  container.classList.add("hidden");
-  arrow.style.top = "15rem";
-  arrow.style.transform = "rotate(-45deg)";
-}
-arrow.addEventListener("click", function () {
-  container.classList.remove("hidden");
-  arrow.style.top = 0;
-  arrow.style.transform = "rotate(135deg)";
-  arrow.addEventListener("click", closeContainer);
-});
+
+//function to close the container by clicking the arrow down
+// function closeContainer() {
+//   container.classList.add("hidden");
+//   arrow.style.top = "15rem";
+//   arrow.style.transform = "rotate(-45deg)";
+// }
+// //Event handler to open the container by clicking the arrow button
+// arrow.addEventListener("click", function () {
+//   container.classList.remove("hidden");
+//   arrow.style.top = 0;
+//   arrow.style.transform = "rotate(135deg)";
+//   arrow.addEventListener("click", closeContainer);
+// });
 //getting the API key from the respective API
 const API_KEY = "60c6fa6a69ff49ba703c743216474064";
 

@@ -1,6 +1,9 @@
 @import url("http://fonts.cdnfonts.com/css/sf-pro-display");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lato:wght@300&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -205,6 +208,6 @@ body {
   border-width: 4px 4px 0 0;
   transform: rotate(-45deg);
 }
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
