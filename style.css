@@ -1,4 +1,5 @@
-@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+/* @import url("http://fonts.cdnfonts.com/css/sf-pro-display"); */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100,200,300,400,700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,7 +9,7 @@
 body {
   /* font-family: "Sf pro display";
    */
-  font-family: "SF Pro Display", sans-serif;
+  font-family: "Lato", sans-serif;
   background: url(https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
   background-repeat: no-repeat;
   background-size: cover;
