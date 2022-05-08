@@ -184,7 +184,7 @@ body {
     overflow-x: scroll;
   }
 }
-.arrowed {
+/* .arrowed {
   position: relative;
   height: 200px;
   width: 200px;
@@ -207,7 +207,7 @@ body {
   border: 1px solid rgb(255, 255, 255);
   border-width: 4px 4px 0 0;
   transform: rotate(-45deg);
-}
+} */
 /* .hidden {
   display: none;
 } */
