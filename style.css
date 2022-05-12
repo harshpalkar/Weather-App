@@ -12,9 +12,10 @@ html {
 
 body {
     font-family: "Sf pro display", sans-serif;
-    background: url(/img/rainbow-vortex.svg);
-    background-color: black;
+    /* background: url(/img/mike-yukhtenko-wfh8dDlNFOk-unsplash-min.jpg); */
+    background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
+    color: black;
     background-size: cover;
     overflow: hidden;
     height: 100vh;
@@ -25,6 +26,7 @@ body {
 
 .container {
     padding: 20px 70px;
+    color: black;
 }
 
 .current-info {
@@ -78,7 +80,7 @@ body {
 .others {
     font-size: 20px;
     /* border: 3px solid white; */
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     margin: 10px 0px;
     padding: 15px;
     border-radius: 8px;
@@ -90,7 +92,6 @@ body {
 
 .future-forecast {
     background-color: rgba(0, 0, 0, 0.678);
-    /* background-color: rgba(24, 24, 27, 0.8); */
     padding: 25px;
     position: fixed;
     bottom: 0;
@@ -110,6 +111,7 @@ body {
     align-items: center;
     margin-right: 10px;
     justify-content: center;
+    background-color: black;
     border: 1px solid whitesmoke;
     padding: 15px;
     border-radius: 20px;
@@ -137,7 +139,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(73, 73, 73, 0.432);
+    background-color: rgba(0, 0, 0, 0.432);
     margin: 0px 10px;
     border: 1px solid whitesmoke;
     padding: 20px;
