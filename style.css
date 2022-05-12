@@ -141,7 +141,7 @@ body {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.432);
     margin: 0px 10px;
-    border: 1px solid whitesmoke;
+    border: 1px solid rgb(0, 0, 0);
     padding: 20px;
     border-radius: 20px;
     transform: translate(0.4);
@@ -149,7 +149,8 @@ body {
 
 .weather-forecast :hover {
     transform: scale(1.1);
-    background-color: rgba(0, 0, 0, 0.968);
+    background-color: rgba(255, 255, 255, 0.968);
+    color: black;
 }
 
 .weather-forecast .weather-forecast-item .day {

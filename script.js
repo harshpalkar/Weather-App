@@ -6,8 +6,8 @@ const countryEl = document.getElementById("country");
 const weatherForecastEl = document.getElementById("weather-forecast");
 const currentTemp = document.getElementById("current-temp");
 const arrow = document.querySelector(".arrow-1");
+// const container = document.querySelector(".container");
 const container = document.querySelector(".container2");
-const bgimg = document.querySelector(".unsplash-bg");
 const days = [
     "Monday",
     "Tuesday",
